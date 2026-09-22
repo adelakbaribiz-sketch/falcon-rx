@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+dashboard/node_modules/
+
+# Build output
+dashboard/dist/
+dashboard/node_modules/.tmp/
+
+# Environment / secrets — never commit real values
+.env
+.env.local
+*.env
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python (reserved for future backtest/data engine, Phase 4+)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs
+*.log
+npm-debug.log*

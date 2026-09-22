@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper: #f6f3ec;
+  --color-paper-raised: #fbfaf5;
+  --color-paper-dark: #15140f;
+  --color-paper-dark-raised: #1c1a13;
+  --color-ink: #1b1a17;
+  --color-ink-dim: #6b6558;
+  --color-ink-dark: #ede8dc;
+  --color-ink-dark-dim: #a39d8c;
+
+  --color-accent: #b5651d;
+  --color-accent-soft: #f0dfc8;
+  --color-confirmed: #1f6f5c;
+  --color-confirmed-soft: #dceee8;
+  --color-inferred: #9a6b0c;
+  --color-inferred-soft: #f4e6c8;
+  --color-unknown: #62594a;
+  --color-unknown-soft: #e7e2d3;
+  --color-simulated: #a6423a;
+  --color-simulated-soft: #f3ddd9;
+
+  --color-border: #ddd6c4;
+  --color-border-dark: #322f26;
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      @apply bg-paper-dark text-ink-dark;
+    }
+  }
+  ::selection {
+    background: var(--color-accent-soft);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
