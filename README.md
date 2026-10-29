@@ -1,5 +1,7 @@
 # FALCON-RX
 
+**What can be proven about a marketed crypto-bot behavior from public sources alone — and an independent, testable engine built only on what was confirmed.**
+
 **Status: Research / Prototype.** Not a working trading system. See [Honest Status](#honest-status)
 below before reading anything else.
 
@@ -8,6 +10,8 @@ retail crypto trading bots, and building an independently-named, independently-i
 inspired by that public behavior — a confidence-graded research corpus, a formal strategy
 specification, a state machine, a first-draft MetaTrader 5 EA, and a demo dashboard that ties them
 together.
+
+![Research dashboard overview — project status, independent state machine and confirmed baseline parameters](docs/screenshots/overview.png)
 
 ## Problem
 
@@ -43,9 +47,23 @@ validated against real data rather than taken on faith?
 
 ## Screenshots
 
-Not committed to this repository (no image-saving step was available in the environment this was
-built in). Run the dashboard locally (see [Demo](#demo)) to see it — every page renders in under a
-second with `npm run dev`.
+| Research findings (Confirmed / Inferred / Unknown) | Strategy parameters calculator |
+|---|---|
+| ![Research browser with confidence-graded, sourced claims](docs/screenshots/research-findings.png) | ![Threshold and trigger-price calculator against the confirmed defaults](docs/screenshots/strategy-parameters.png) |
+
+| Backtest demo (synthetic data) |
+|---|
+| ![Backtest demo on a synthetic random-walk price series](docs/screenshots/backtest-demo.png) |
+
+<p>
+  <img src="docs/screenshots/mobile.png" alt="Overview on a phone-sized screen" width="260">
+</p>
+
+*Phone-sized screen (390 px wide).*
+
+*Captured from the dashboard running locally (`npm run build && npm run preview`). The backtest page
+uses a synthetic random-walk series, labeled SIMULATED in the UI — it is not real market data and not
+a performance result. Run it yourself (see [Demo](#demo)); every page renders in under a second.*
 
 ## Architecture
 
