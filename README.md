@@ -59,7 +59,7 @@ validated against real data rather than taken on faith?
   <img src="docs/screenshots/mobile.png" alt="Overview on a phone-sized screen" width="260">
 </p>
 
-*Phone-sized screen (390 px wide).*
+*Phone-sized screen (390 px wide). Screenshots use the dark theme (it follows the system setting); a light theme is also available.*
 
 *Captured from the dashboard running locally (`npm run build && npm run preview`). The backtest page
 uses a synthetic random-walk series, labeled SIMULATED in the UI — it is not real market data and not
