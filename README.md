@@ -9,6 +9,8 @@ inspired by that public behavior — a confidence-graded research corpus, a form
 specification, a state machine, a first-draft MetaTrader 5 EA, and a demo dashboard that ties them
 together.
 
+![Research dashboard overview — project status, independent state machine and confirmed baseline parameters](docs/screenshots/overview.png)
+
 ## Problem
 
 Retail crypto trading bots often market a specific behavior ("buys small dips, sells small rallies,
@@ -43,9 +45,17 @@ validated against real data rather than taken on faith?
 
 ## Screenshots
 
-Not committed to this repository (no image-saving step was available in the environment this was
-built in). Run the dashboard locally (see [Demo](#demo)) to see it — every page renders in under a
-second with `npm run dev`.
+| Research findings (Confirmed / Inferred / Unknown) | Strategy parameters calculator |
+|---|---|
+| ![Research browser with confidence-graded, sourced claims](docs/screenshots/research-findings.png) | ![Threshold and trigger-price calculator against the confirmed defaults](docs/screenshots/strategy-parameters.png) |
+
+| Backtest demo (synthetic data) |
+|---|
+| ![Backtest demo on a synthetic random-walk price series](docs/screenshots/backtest-demo.png) |
+
+*Captured from the dashboard running locally (`npm run build && npm run preview`). The backtest page
+uses a synthetic random-walk series, labeled SIMULATED in the UI — it is not real market data and not
+a performance result. Run it yourself (see [Demo](#demo)); every page renders in under a second.*
 
 ## Architecture
 
