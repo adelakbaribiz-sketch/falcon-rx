@@ -55,9 +55,11 @@ validated against real data rather than taken on faith?
 |---|
 | ![Backtest demo on a synthetic random-walk price series](docs/screenshots/backtest-demo.png) |
 
-| Mobile | 
-|---|
-| <img src="docs/screenshots/mobile.png" alt="Overview on a phone-sized screen" width="260"> |
+<p>
+  <img src="docs/screenshots/mobile.png" alt="Overview on a phone-sized screen" width="260">
+</p>
+
+*Phone-sized screen (390 px wide).*
 
 *Captured from the dashboard running locally (`npm run build && npm run preview`). The backtest page
 uses a synthetic random-walk series, labeled SIMULATED in the UI — it is not real market data and not
