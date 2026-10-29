@@ -1,5 +1,7 @@
 # FALCON-RX
 
+**What can be proven about a marketed crypto-bot behavior from public sources alone — and an independent, testable engine built only on what was confirmed.**
+
 **Status: Research / Prototype.** Not a working trading system. See [Honest Status](#honest-status)
 below before reading anything else.
 
@@ -52,6 +54,10 @@ validated against real data rather than taken on faith?
 | Backtest demo (synthetic data) |
 |---|
 | ![Backtest demo on a synthetic random-walk price series](docs/screenshots/backtest-demo.png) |
+
+| Mobile | 
+|---|
+| <img src="docs/screenshots/mobile.png" alt="Overview on a phone-sized screen" width="260"> |
 
 *Captured from the dashboard running locally (`npm run build && npm run preview`). The backtest page
 uses a synthetic random-walk series, labeled SIMULATED in the UI — it is not real market data and not
